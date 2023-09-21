@@ -1,6 +1,8 @@
 import random
 
-print("bem vindo ao jogo de adivinhação!")
+def jogar():
+
+    print("bem vindo ao jogo de adivinhação!")
 
 numero_secreto = random.randrange(1, 101)
 tentativa = 0
@@ -45,4 +47,7 @@ for rodada in range(1, tentativa + 1):
         pontos_perdidos = abs(numero_secreto - chute)
         pontos = pontos - pontos_perdidos    
 
-print("fim do jogo")
+    print("fim do jogo")
+
+if (__name__ == "__main__"):
+    jogar()
