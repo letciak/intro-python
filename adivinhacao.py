@@ -32,8 +32,8 @@ for rodada in range(1, tentativa + 1):
         continue
 
     acertou = chute == numero_secreto
-    maior   = chute > numero_secreto
-    menor   = chute < numero_secreto
+    maior = chute > numero_secreto
+    menor = chute < numero_secreto
 
     if(acertou):
         print("você acertou e fez {} pontos!".format(pontos))
